@@ -12,7 +12,7 @@ RUN cd /opt && curl https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-rhel62
 RUN mkdir -p /data/db && chown -R mongodb:mongodb /data/db
 VOLUME /data/db
 
-COPY docker-entrypoint.sh /entrypoint.sh
+COPY entrypoint.sh /entrypoint.sh
 # ENTRYPOINT ["/entrypoint.sh"]
 ENV PATH /opt/mongodb/bin:${PATH}
 
