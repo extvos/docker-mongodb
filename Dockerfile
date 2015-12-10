@@ -1,7 +1,5 @@
 FROM extvos/centos
-
 MAINTAINER  "Mingcai SHEN <archsh@gmail.com>"
-
 ENV MONGODB_VERSION 3.0.5
 
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
